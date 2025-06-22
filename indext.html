@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arise.Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="gambar/Arise.Art.png" class="logo">
+               <ul>
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#portofolio">Portofolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
+            <div class="header-text">
+                <h1><span>Hi!,</span><br>I'm Natalia Rahmawati</h1>
+                <p>Digital & Tradisional Artists</p>
+            </div>
+        </div>
+    </div>
+  <!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="gambar/FOTO DIRI.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Natali Rahma, I love color, texture, and the story behind every artwork. I created this website as a place to share my creative process and portfolio of my works.</p>
+                  
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Digital Art</span><br>Ilustration, design packaging, & design character </li>
+                            <li><span>Painting </span><br>Painting on cloth, canvas and paper with watercolor or water color </li>
+                            <li><span>Software</span><br>Adobe Animated, CorrelDRAW, Adobe Photoshop </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AMOR EXHIBITION</span><br>Committee and Submit art</li>
+                            <li><span>PRINTDLAND</span><br>Design logos, banners, pamphlets, or designs according to customer requests.</li>
+                            <li><span>CV Enterna </span><br>Create clothing or textile designs, create logos, % create vector illustrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------portofolio------------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">Portofolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <a href="halaman-lain.html">
+                    <img src="gambar/digital-art.png" alt="Klik untuk pindah halaman" class="gambar-tombol">
+                  </a>
+                <div class="teks">
+                    <h1>Digital Art</h1>
+                </div>
+            </div>
+            <div class="work">
+                <a href="halaman-lain copy.html">
+                    <img src="gambar/tradisional-art.png" alt="Klik untuk pindah halaman" class="gambar-tombol">
+                  </a>
+                <div class="teks">
+                    <h1>Traditional Art</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------contact------------->
+<div id="contact">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Saya</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+<div class="contact-container">
+    <h3>Contact Me</h3>
+    <div class="contact-info">
+      <p><strong>Name:</strong> Natalia Rahmawati</p>
+      <p><strong>Email:</strong> natalia.rahmawati@gmail.com</p>
+      <p><strong>Phone:</strong>085643505883</p>
+      <p><strong>address:</strong> srondol kulon, Kota Semarang</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/natanat293" target="_blank">@natanat293</a></p>
+</div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
